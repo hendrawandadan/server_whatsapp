@@ -46,6 +46,6 @@ app.post("/kirimpesan", (req, res) => {
     })
 })
 
-app.listen(3000, function(){
-    console.log("Server Berjalan di Port: " + 3000);
+app.listen(4000, function(){
+    console.log("Server Berjalan di Port: " + 4000);
 })
