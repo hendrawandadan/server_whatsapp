@@ -2,6 +2,7 @@ const {Client, LocalAuth} = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const express = require("express");
 const cors = require("cors");
+const PORT = 4000;
 
 const app = express();
 app.use(express.json());
@@ -46,6 +47,6 @@ app.post("/kirimpesan", (req, res) => {
     })
 })
 
-app.listen(4000, function(){
-    console.log("Server Berjalan di Port: " + 4000);
+app.listen(PORT, function(){
+    console.log("Server Berjalan ..);
 })
