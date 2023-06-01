@@ -48,5 +48,5 @@ app.post("/kirimpesan", (req, res) => {
 })
 
 app.listen(PORT, function(){
-    console.log("Server Berjalan ..);
+    console.log("Server Berjalana");
 })
