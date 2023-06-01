@@ -2,7 +2,7 @@ const {Client, LocalAuth} = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const express = require("express");
 const cors = require("cors");
-const PORT = 4000;
+const port = 4000;
 
 const app = express();
 app.use(express.json());
@@ -47,6 +47,6 @@ app.post("/kirimpesan", (req, res) => {
     })
 })
 
-app.listen(PORT, function(){
+app.listen(port,() => {
     console.log("Server Berjalana");
 })
