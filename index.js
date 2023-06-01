@@ -50,3 +50,4 @@ app.post("/kirimpesan", (req, res) => {
 app.listen(port,() => {
     console.log("Server Berjalana");
 })
+module.exports = app
