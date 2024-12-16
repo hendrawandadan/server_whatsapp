@@ -2,18 +2,10 @@ const {Client, LocalAuth} = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const express = require("express");
 const cors = require("cors");
-const port = 4000;
+const port = 5000;
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
 const client = new Client({puppeteer: {headless: true}, authStrategy: new LocalAuth()});
-let corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200,
-    methods: "GET, POST"
-}
-app.use(cors(corsOptions));
 
 client.on('qr', (qr) => {
     console.log('Token Whatsapp ', qr);
